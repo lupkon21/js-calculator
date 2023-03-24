@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Kalkulačka</title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+
+  <section>
+    <div id="vypis">
+      <p id="priklad">000 + 000 =</p>
+      <p id="vysledek">0000,00</p>
+    </div>
+
+    <div id="tlacitka">
+      <button id="deleni" onclick="priklad('÷')">÷</button>
+      <button id="mocnina" onclick="priklad('²')">x²</button>
+      <button id="smazani" onclick="smazani('C')">C</button>
+      <button id="delete" onclick="smazani('Back')">⌫</button>
+
+      <button onclick="priklad('7')">7</button>
+      <button onclick="priklad('8')">8</button>
+      <button onclick="priklad('9')">9</button>
+      <button id="scitani" onclick="priklad('+')">+</button>
+
+      <button onclick="priklad('4')">4</button>
+      <button onclick="priklad('5')">5</button>
+      <button onclick="priklad('6')">6</button>
+      <button id="odcitani" onclick="priklad('-')">-</button>
+
+      <button onclick="priklad('1')">1</button>
+      <button onclick="priklad('2')">2</button>
+      <button onclick="priklad('3')">3</button>
+      <button id="nasobeni" onclick="priklad('×')">×</button>
+
+      <button id="nula" onclick="priklad('0')">0</button>
+      <button id="," onclick="priklad(',')">,</button>
+      <button id="rovnitko" onclick="priklad('=')">=</button>
+    </div>
+  </section>
+
+  <footer>
+    <h2 id="rok">© 2021</h2>
+  </footer>
+  <script src="script.js" type="text/javascript"></script>
+</body>
+</html>

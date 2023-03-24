@@ -1,0 +1,238 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background: linear-gradient(119deg, #76bdf1, #c792cc 100%, #5c8cc5 100%);
+  color: #ffffff;
+  height: 100vh;
+  font-family: Calibri;
+}
+
+header {
+  background: linear-gradient(94deg, #275278, #101d40c2 100%);
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 0;
+  font-size: 1.5rem;
+}
+
+h1,
+h2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  background: linear-gradient(92deg, #275278, #101d40c2 100%);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}
+
+section {
+  background: linear-gradient(145deg, #44a29c, #314a9b 100%);
+  width: 472px;
+  height: 704px;
+  border-radius: 44px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#vypis {
+  background: linear-gradient(92deg, #275278, #101d40c2 100%);
+  width: inherit;
+  height: 164px;
+  border-radius: 44px 44px 0 0;
+}
+
+#priklad {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 44px;
+  top: 15px;
+}
+
+#vysledek {
+  font-size: 4.5rem;
+  position: absolute;
+  right: 44px;
+  top: 44px;
+}
+
+#tlacitka {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+button {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  margin: 10px 5px;
+  font-size: 40px;
+  border: none;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #00000029;
+  cursor: pointer;
+  outline-style: none;
+}
+
+#nula {
+  width: 188px;
+  border-radius: 37px;
+}
+
+#rovnitko {
+  background-color: #4dc1a5;
+}
+
+#nasobeni {
+  background-color: #ebbbd0;
+}
+
+#odcitani {
+  background-color: #46c9fb;
+}
+
+#scitani {
+  background-color: #dc7d7d;
+}
+
+#delete {
+  background-color: #bf5252;
+}
+
+#smazani {
+  background-color: #8083d5;
+}
+
+#mocnina {
+  background-color: #a0e5a5;
+}
+
+#deleni {
+  background-color: #b5c1ff;
+}
+
+#tlacitka button:active {
+  border: 2px solid black;
+}
+
+#tlacitka button:hover {
+  background-color: rgba(189, 189, 189, 0.521);
+}
+
+/* Pro novější mobilní telefony */
+@media only screen and (max-width: 600px) {
+  section {
+    width: 25rem;
+    height: 40rem;
+    position: relative;
+    top: 27rem;
+  }
+
+  button {
+    width: 70px;
+    height: 70px;
+  }
+
+  #tlacitka button:active {
+    border: none;
+  }
+
+  #nula {
+    width: 170px;
+  }
+
+  #tlacitka {
+    padding: 15px;
+  }
+
+  footer {
+    visibility: hidden;
+  }
+
+  header {
+    width: 100%;
+  }
+}
+
+/* Pro starší mobilní telefony */
+@media only screen and (max-width: 400px) {
+  section {
+    width: 21rem;
+    height: 33rem;
+    position: relative;
+    top: 21rem;
+  }
+
+  button {
+    width: 63px;
+    height: 63px;
+  }
+
+  #vypis {
+    height: 5.5rem;
+  }
+
+  #priklad {
+    font-size: 1rem;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+  }
+
+  #vysledek {
+    font-size: 3rem;
+    right: 30px;
+    top: 30px;
+  }
+
+  #nula {
+    width: 140px;
+  }
+}
+
+/* Pro notebooky a obrazovky s nižší výškou */
+@media only screen and (max-height: 900px) {
+  section {
+    width: 402px;
+    height: 590px;
+    position: relative;
+    top: 23.6rem;
+  }
+  button {
+    width: 68px;
+    height: 68px;
+    margin: 8px;
+  }
+
+  #nula {
+    width: 156px;
+  }
+  #vypis {
+    height: 7rem;
+  }
+
+  #vysledek {
+    font-size: 4rem;
+    right: 45px;
+    top: 38px;
+  }
+
+  footer {
+    visibility: hidden;
+  }
+}
